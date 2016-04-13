@@ -1,15 +1,17 @@
 #Logentries REST API Docs
 
-## Authentication
+## Management API 
+
+### Authentication
 The following documentation covers Authentication of the API requests.
 * [Authentication](Authentication.md)
 
-## Account
+### Account
 The follow documents covers the Account Resource.
 
 * [GET Account](Account/GetAccount.md)
 
-## Users
+### Users
 The follow documents covers the Account Resource.
 
 * [GET User](Users/GetUser.md)
@@ -17,3 +19,8 @@ The follow documents covers the Account Resource.
 * [POST User (Add New User)](Users/AddUser.md)
 * [POST User (Add Existing User)](Users/AddExistingUser.md)
 * [PUT User (Edit User)](Users/EditUser.md)
+
+## Query API
+
+### Query
+* [GET Query](Query/GetQuery.md)

@@ -4,7 +4,7 @@
 
 * **URL**
 
-  http://rest.logentries.com/management/accounts/:accountid/users/:userid
+  https://rest.logentries.com/management/accounts/:accountid/users/:userid
 
 * **Method:**
   
