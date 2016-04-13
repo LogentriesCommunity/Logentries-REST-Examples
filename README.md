@@ -1,7 +1,17 @@
-**User Management API Docs**
+#Logentries REST API Docs
 
+## Authentication
+The following documentation covers Authentication of the API requests.
 * [Authentication](Authentication.md)
+
+## Account
+The follow documents covers the Account Resource.
+
 * [GET Account](Account/GetAccount.md)
+
+## Users
+The follow documents covers the Account Resource.
+
 * [GET User](Users/GetUser.md)
 * [GET Users](Users/GetUsers.md)
 * [POST User (Add New User)](Users/AddUser.md)
