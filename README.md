@@ -23,4 +23,4 @@ The follow documents covers the Account Resource.
 ## Query API
 
 ### Query
-* [GET Query](Query/GetQuery.md)
+* [GET Query](Query/GETQuery.md)
