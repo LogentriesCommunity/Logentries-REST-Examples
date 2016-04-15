@@ -32,12 +32,15 @@
     
     ```
     {
-        "id": "",
+        "id": "0d9dcbd3-11a8-49f4-a028-dfa46d71de5a",
         "email": "foo@bar.com",
         "name": "Foo Bar",
         "organization": "Foo Bar INC",
         "max_retention_period": 100000,
-        "retention_period": 100000
+        "retention_period": 100000,
+        "owner_api_key_id": "bebb6a4a-62f8-48f2-b10a-b48792e77a87",
+        "rw_api_key": "8df0c98b-73cc-4a2f-8cfe-c55e7971e3e3"
+        "ro_api_key": "858595c4-715f-4ac8-8cdd-bbd86084adc9",
     }
     ```
  
