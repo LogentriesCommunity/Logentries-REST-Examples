@@ -1,15 +1,19 @@
-import hashlib, hmac
+import ConfigParser
 import base64
 import datetime
-import requests
-import ConfigParser
+import hashlib
+import hmac
 import json
+
+import requests
 
 config = ConfigParser.ConfigParser()
 params = {}
 
+
 def load_config():
     config.read('settings.ini')
+
 
 def get_params():
     params['api-key-id'] = config.get('Map', 'api-key-id')
@@ -44,11 +48,12 @@ def create_headers():
 
 def write_map_to_file(response_data):
     try:
-        user_map_file = open('user-map.json','w')
+        user_map_file = open('user-map.json', 'w')
     except IOError:
         print 'Error writing to file'
     user_map_file.write(json.dumps(response_data, separators=(',', ':')))
     user_map_file.close()
+
 
 def build_users_map():
     uri = 'https://rest.logentries.com/management/accounts/%s/users' % params.get('resource-id')
@@ -58,10 +63,12 @@ def build_users_map():
     if r.status_code == 200:
         write_map_to_file(response_data)
 
+
 def start():
     load_config()
     get_params()
     build_users_map()
+
 
 if __name__ == '__main__':
     start()
