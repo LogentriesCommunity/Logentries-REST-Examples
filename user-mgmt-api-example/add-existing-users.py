@@ -1,11 +1,11 @@
-import sys
-import hashlib, hmac
+import ConfigParser
 import base64
 import datetime
-import requests
-import ConfigParser
-import csv
+import hashlib
+import hmac
 import json
+
+import requests
 
 config = ConfigParser.ConfigParser()
 params = {}
@@ -64,11 +64,13 @@ def add_users_to_account(users):
         r = requests.request('POST', uri, data='', headers=headers)
         print r.status_code, r.content
 
+
 def start():
     load_config()
     get_params()
     users = get_users_from_map()
     add_users_to_account(users)
+
 
 if __name__ == '__main__':
     start()
