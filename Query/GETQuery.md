@@ -48,7 +48,7 @@ Request used to Query your Logentries Logs using a LEQL query.
     }  
     ```
  
- * **Code:** `201` for a query that successfully started but has not yet finished
+ * **Code:** `202` for a query that successfully started but has not yet finished
     
     **Content:** 
     
