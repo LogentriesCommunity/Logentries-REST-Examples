@@ -90,7 +90,7 @@ import requests
 import json
 import time
 
-API-KEY = 'YOUR API KEY GOES HERE'
+API_KEY = 'YOUR API KEY GOES HERE'
 
 def continue_request(req):
     if 'links' in req.json():
@@ -114,7 +114,7 @@ def handle_response(resp):
 
 
 def make_request(provided_url=None):
-    headers = {'x-api-key': API-KEY}
+    headers = {'x-api-key': API_KEY}
 
     url = "https://rest.logentries.com/query/logs/f9c6e2c1-ac7a-4a29-8faa-a8d70f96df71?query=where(foo=bar)from=1450557604000&to=1460557604000"
     if provided_url:
